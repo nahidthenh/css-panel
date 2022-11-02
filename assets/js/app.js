@@ -1,3 +1,4 @@
+// Sidebar menu show hide 
 let arrow = document.querySelectorAll(".arrow");
 for (let i = 0; i < arrow.length; i++) {
   arrow[i].addEventListener("click", (e) => {
@@ -5,7 +6,7 @@ for (let i = 0; i < arrow.length; i++) {
     arrowParent.classList.toggle("showMenu");
   });
 }
-
+// sidebar
 let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".menuToggle");
 console.log(sidebarBtn);
@@ -33,13 +34,10 @@ tabs.forEach(tab => {
 })
 
 // Profile Dropdown 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
 function dropDownMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -52,11 +50,6 @@ window.onclick = function (event) {
     }
   }
 }
-
-
-
-
-
 
 
 // Checked Color Switcher 

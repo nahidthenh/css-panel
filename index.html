@@ -22,7 +22,7 @@
         <img src="assets/img/logo.svg" alt="logo">
       </div>
     </div>
-    <!-- menu item  -->
+    <!-- Sidebar menu item  -->
     <ul class="nav-links">
       <li>
         <a href="#">
@@ -51,6 +51,7 @@
           </a>
           <i class="ri-arrow-drop-down-line arrow"></i>
         </div>
+        <!-- sidebar dropdown item -->
         <ul class="sub-menu">
           <li>
             <a href="#"><i class="ri-sim-card-2-line"></i> Single/Bulk Lookup</a>
@@ -81,9 +82,10 @@
       </li>
     </ul>
   </div>
-  <!-- Main Section  -->
+  <!-- Dashboard Section  -->
   <section class="home-section">
     <div class="home-content">
+      <!-- Header  -->
       <div class="header-wrap">
         <div>
           <i class="menuToggle ri-bar-chart-horizontal-line"></i>
@@ -93,6 +95,7 @@
             <div>
               <p class="current-balance">Balance : <span>$125</span></p>
             </div>
+            <!-- UserProfile  -->
             <div class="dropdown">
               <div class="user-profile">
                 <img src="assets/img/user-profile.png" alt="user-profile">
@@ -114,7 +117,8 @@
           </div>
         </div>
       </div>
-      <main>
+      <!-- Main Section  -->
+      <section class="main">
         <div class="d-flex">
           <!-- profile area  -->
           <div class="profile-section text-center">
@@ -192,11 +196,11 @@
             </div>
             <!-- EmailNotifications -->
             <div id="EmailNotifications" data-tab-content class="active">
-              <form action="">
+              <form action="#">
                 <div class="EmailNotifications-item">
                   <label class="toggle">
                     <input class="toggle-checkbox" id="check1" type="checkbox" checked>
-                    <div class="toggle-switch"></div>
+                    <span class="toggle-switch"></span>
                     <span class="toggle-label active">Notify me when list verification completes</span>
                   </label>
                 </div>
@@ -204,7 +208,7 @@
                 <div class="EmailNotifications-item">
                   <label class="toggle">
                     <input class="toggle-checkbox" id="check2" type="checkbox">
-                    <div class="toggle-switch"></div>
+                    <span class="toggle-switch"></span>
                     <span class="toggle-label">Notify me when list export completes</span>
                   </label>
                 </div>
@@ -212,7 +216,7 @@
                 <div class="EmailNotifications-item">
                   <label class="toggle">
                     <input class="toggle-checkbox" id="check3" type="checkbox" checked>
-                    <div class="toggle-switch"></div>
+                    <span class="toggle-switch"></span>
                     <span class="toggle-label active">Notify me when list verification result is about to
                       expire</span>
                   </label>
@@ -221,18 +225,19 @@
                 <div class="EmailNotifications-item">
                   <label class="toggle">
                     <input class="toggle-checkbox" id="check4" type="checkbox" checked>
-                    <div class="toggle-switch"></div>
+                    <span class="toggle-switch"></span>
                     <span class="toggle-label active">Receive Low Credits Email</span>
                   </label>
 
                   <div class="d-flex justify-content-between">
                     <div class="credits-input">
                       <label for="email">Send Email to </label> <br>
-                      <input type="email" id="email" name="email" placeholder="alexajui@gmail.com" required />
+                      <input type="email" id="email" name="email" placeholder="alexajui@gmail.com" />
+                      <input type="text" placeholder="alexajui@gmail.com">
                     </div>
                     <div class="credits-input">
                       <label for="credits">When credits are less than </label> <br>
-                      <input type="number" id="credits" name="credits" placeholder="50" required />
+                      <input type="number" id="credits" name="credits" placeholder="50" />
                     </div>
                   </div>
                 </div>
@@ -248,21 +253,13 @@
           </div>
 
         </div>
-
-    </div>
-    </main>
+      </section>
     </div>
   </section>
 
 
   <!-- ==== Script File ==== -->
   <script src="assets/js/app.js"></script>
-  <script>
-    function menuToggle() {
-      const toggleMenu = document.querySelector(".menu");
-      toggleMenu.classList.toggle("active");
-    }
-  </script>
 </body>
 
 </html>

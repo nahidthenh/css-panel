@@ -528,7 +528,7 @@ body {
 
 
 /*  ====  main CSS  ====  */
-main {
+.main {
   padding: 30px;
   background-color: #FCFBFF;
   width: 100%;
@@ -980,8 +980,9 @@ hr {
   }
 
   /* 320 Header end */
-  main {
+  .main {
     padding: 0px;
+    margin-bottom: 30px;
   }
 
   .profile-section {
@@ -1046,8 +1047,9 @@ hr {
   }
 
   /* 320 Header end */
-  main {
+  .main {
     padding: 0px;
+    margin-bottom: 30px;
   }
 
   .profile-section {
