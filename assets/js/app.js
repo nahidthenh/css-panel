@@ -61,24 +61,12 @@ window.onclick = function (event) {
 
 // Checked Color Switcher 
 
-// let check1 = document.getElementsByClassName('check1');
-// let style1 = document.querySelector('.toggle-label')
-// check1.addEventListener('click', function () {
-//   if (check1.checked) {
-//     style1.style.cssText = 'color:#26262E'
-//   } else {
-//     style1.style.cssText = 'color:#7D7D7E'
-//   }
-// });
-function isCheck(cls, text_cls) {
-  let check1 = document.getElementsByClassName(cls);
-  let style1 = document.querySelector('.' + text_cls);
-  console.log(check1, style1);
-  // check1.addEventListener('click', function () {
+let check1 = document.getElementById('check1');
+let style1 = document.querySelector('.toggle-label')
+check1.addEventListener('click', function () {
   if (check1.checked) {
     style1.style.cssText = 'color:#26262E'
   } else {
     style1.style.cssText = 'color:#7D7D7E'
   }
-  // });
-}
+});
