@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment for 'Frontend Developer HTML CSS'
+  </title>
+  <!-- ===== icon css ===== -->
+  <!-- <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- ===== app css ===== -->
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+  <!-- Sidebar  -->
+  <div class="sidebar close">
+    <div class="logo-details">
+      <div class="logo_name">
+        <img src="assets/img/logo.svg" alt="logo">
+      </div>
+    </div>
+    <!-- menu item  -->
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class="ri-dashboard-fill"></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="ri-search-line"></i>
+          <span class="link_name">Lookup</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="ri-database-2-line"></i>
+          <span class="link_name">Files</span>
+        </a>
+      </li>
+      <!-- Menu With Sub item  -->
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="ri-sim-card-line"></i>
+            <span class="link_name">Logs</span>
+          </a>
+          <i class="ri-arrow-drop-down-line arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li>
+            <a href="#"><i class="ri-sim-card-2-line"></i> Single/Bulk Lookup</a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-pie-chart-line"></i> Daily Usages</a>
+          </li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="ri-shopping-cart-line"></i>
+          <span class="link_name">Buy Credits</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="ri-star-line"></i>
+          <span class="link_name">Integrations</span>
+        </a>
+      </li>
+      <li class="nav-active">
+        <a href="#">
+          <i class="ri-user-line"></i>
+          <span class="link_name">My Profile</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Main Section  -->
+  <section class="home-section">
+    <div class="home-content">
+      <div class="header-wrap">
+        <div>
+          <i class="menuToggle ri-bar-chart-horizontal-line"></i>
+        </div>
+        <div>
+          <div class="d-flex align-items-center me-30">
+            <div>
+              <p class="current-balance">Balance : <span>$125</span></p>
+            </div>
+            <div class="user-profile">
+              <img src="assets/img/user-profile.png" alt="user-profile">
+              <p class="user-name">
+                Alexa Jui
+              </p>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="d-flex">
+          <!-- profile area  -->
+          <div class="profile-section text-center">
+            <img src="assets/img/user-profile2.png" alt="">
+            <h3>Alexa Jui</h3>
+            <p>alexajui@gmail.com</p>
+            <p>+1 354 785 4125</p>
+            <p>3213 D Street, Columbus, USA</p>
+          </div>
+          <!-- Your Credit Cards Area  -->
+          <div class="your-card-wrap">
+            <h3 class="section-title">
+              Your Credit Cards
+            </h3>
+            <div class="your-card-box d-flex">
+              <div class="single-card-box">
+                <h3 class="card-title">
+                  Credit Card 1
+                </h3>
+                <h3 class="card-number">
+                  xxxxxxxxxxxx4684
+                </h3>
+                <div class="delete-card">
+                  <a href="#">
+                    <i class="ri-delete-bin-5-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-card-box">
+                <h3 class="card-title">
+                  Credit Card 2
+                </h3>
+                <h3 class="card-number">
+                  xxxxxxxxxxxx4242
+                </h3>
+                <div class="delete-card">
+                  <a href="#">
+                    <i class="ri-delete-bin-5-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-card-box">
+                <h3 class="card-title">
+                  Credit Card 3
+                </h3>
+                <h3 class="card-number">
+                  xxxxxxxxxxxx1254
+                </h3>
+                <div class="delete-card">
+                  <a href="#">
+                    <i class="ri-delete-bin-5-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More Setting  -->
+        <div class="more-setting-wrap">
+          <ul class="tabs">
+            <li data-tab-target="#UpdateProfile" class="tab">Update Profile</li>
+            <li data-tab-target="#ChangePassword" class="tab">Change Password</li>
+            <li data-tab-target="#EmailNotifications" class="active tab">Email Notifications</li>
+            <li data-tab-target="#AutoRechargeSettings" class="tab">Auto Recharge Settings</li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="UpdateProfile" data-tab-content>
+              <h1>Update Profile</h1>
+              <p>Comming Soon</p>
+            </div>
+            <div id="ChangePassword" data-tab-content>
+              <h1>Change Password</h1>
+              <p>Comming Soon</p>
+            </div>
+            <!-- EmailNotifications -->
+            <div id="EmailNotifications" data-tab-content class="active">
+              <div class="EmailNotifications-item">
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" checked>
+                  <div class="toggle-switch"></div>
+                  <span class="toggle-label active">Notify me when list verification completes</span>
+                </label>
+              </div>
+
+              <div class="EmailNotifications-item">
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox">
+                  <div class="toggle-switch"></div>
+                  <span class="toggle-label">Notify me when list export completes</span>
+                </label>
+              </div>
+
+              <div class="EmailNotifications-item">
+                <label class="toggle">
+                  <input class="toggle-checkbox check1" onclick="isCheck('check1', 'toggle-lebel1')" type="checkbox"
+                    checked>
+                  <div class="toggle-switch"></div>
+                  <span class="toggle-label toggle-lebel1">Notify me when list verification result is about to
+                    expire</span>
+                </label>
+              </div>
+              <hr>
+              <div class="EmailNotifications-item">
+                <label class="toggle">
+                  <input class="toggle-checkbox check1" type="checkbox" checked>
+                  <div class="toggle-switch"></div>
+                  <span class="toggle-label toggle-lebel1">Receive Low Credits Email</span>
+                </label>
+                <form action="">
+                  <div class="d-flex justify-content-between">
+                    <div class="credits-input">
+                      <label for="email">Send Email to </label> <br>
+                      <input type="email" id="email" name="email" placeholder="alexajui@gmail.com" required />
+                    </div>
+                    <div class="credits-input">
+                      <label for="credits">When credits are less than </label> <br>
+                      <input type="number" id="credits" name="credits" placeholder="50" required />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="AutoRechargeSettings" data-tab-content>
+              <h1>Auto Recharge Settings</h1>
+              <p>Comming Soon</p>
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </section>
+
+
+  <!-- ==== Script File ==== -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
