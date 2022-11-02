@@ -960,3 +960,122 @@ hr {
   display: flex;
   justify-content: center;
 }
+
+/*  ======== Responsive css ======== */
+
+/* 320 to 450  */
+@media only screen and (max-width: 450px) and (min-width: 320px) {
+  .d-flex {
+    display: block;
+  }
+
+  /* 320 Header Start */
+  .user-name {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .current-balance {
+    margin-right: 0px;
+  }
+
+  /* 320 Header end */
+  main {
+    padding: 0px;
+  }
+
+  .profile-section {
+    width: 100% !important;
+  }
+
+  .section-title {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .single-card-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .profile-section,
+  .your-card-wrap {
+    padding: 10px;
+  }
+
+  .tabs {
+    display: block;
+    text-align: center;
+  }
+
+  .more-setting-wrap {
+    margin-right: 0px;
+  }
+
+  .tabs li {
+    margin-right: 0px;
+  }
+}
+
+/* 451 to 800  */
+@media only screen and (max-width:800px) and (min-width: 451px) {
+
+  .your-card-box.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .single-card-box {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  .d-flex {
+    display: block;
+  }
+
+  /* 320 Header Start */
+  .user-name {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .current-balance {
+    margin-right: 0px;
+  }
+
+  /* 320 Header end */
+  main {
+    padding: 0px;
+  }
+
+  .profile-section {
+    width: 100% !important;
+  }
+
+  .section-title {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+
+  .profile-section,
+  .your-card-wrap {
+    padding: 10px;
+  }
+
+  .tabs {
+    display: block;
+    text-align: center;
+  }
+
+  .more-setting-wrap {
+    margin-right: 0px;
+  }
+
+  .tabs li {
+    margin-right: 0px;
+  }
+}
