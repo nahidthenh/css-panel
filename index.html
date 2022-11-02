@@ -93,12 +93,23 @@
             <div>
               <p class="current-balance">Balance : <span>$125</span></p>
             </div>
-            <div class="user-profile">
-              <img src="assets/img/user-profile.png" alt="user-profile">
-              <p class="user-name">
-                Alexa Jui
-              </p>
-              <i class="ri-arrow-down-s-line"></i>
+            <div class="dropdown">
+              <div class="user-profile">
+                <img src="assets/img/user-profile.png" alt="user-profile">
+                <p class="user-name">
+                  Alexa Jui
+                </p>
+                <i class="ri-arrow-down-s-line dropbtn" onclick="dropDownMenu()"></i>
+              </div>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">My Profile</a>
+                <a href="#">Add Fund</a>
+                <a href="#">API Documentation</a>
+                <button class="log-out">
+                  <i class="ri-logout-box-line me-10"></i>
+                  Log Out
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -242,6 +253,12 @@
 
   <!-- ==== Script File ==== -->
   <script src="assets/js/app.js"></script>
+  <script>
+    function menuToggle() {
+      const toggleMenu = document.querySelector(".menu");
+      toggleMenu.classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>
