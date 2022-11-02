@@ -1,4 +1,5 @@
-// Sidebar menu show hide 
+// Sidebar menu show hide //
+
 let arrow = document.querySelectorAll(".arrow");
 for (let i = 0; i < arrow.length; i++) {
   arrow[i].addEventListener("click", (e) => {
